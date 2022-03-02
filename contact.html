@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/static/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Join: Soundwave</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="static/logo.png" /><span class="heading_logo">SoundWave</span>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <ion-icon name="menu-sharp"></ion-icon>
+      </button>
+      <ul class="nav-ul" id="nav-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+    <div class="join">
+      <div class="join-1">Join the <span class="fun">fun.</span></div>
+      <div class="form">
+        <div class="wrap">
+          <label id="name_label"> Name: </label><br />
+          <input type="text" id="name" (required) /><br />
+        </div>
+        <div class="wrap">
+          <label id="email_label"> Email: </label><br />
+          <input type="email" id="email" required /><br />
+        </div>
+        <div class="wrap">
+          <label id="pwd_label"> Password: </label><br />
+          <input type="password" id="pwd" required /><br />
+        </div>
+        <div class="form-but">
+          <input type="submit" value="Join" required />
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footercontent">
+      <div class="footer-1">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="2-footer">
+        <ul>
+          <li>
+            <ion-icon name="logo-twitter"></ion-icon> <a href="#">Twitter</a>
+          </li>
+          <li>
+            <ion-icon name="logo-facebook"></ion-icon> <a href="#">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="script.js"></script>
+</html>

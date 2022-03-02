@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* background: rgba(47, 48, 58, 1); */
+  color: white;
+  overflow-y: hidden;
+  /* width: 100vw; */
+}
+
+/* NAVBAR */
+body {
+  background-color: rgba(47, 48, 58, 1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-right: 6em;
+  list-style: none;
+  /* position: sticky; */
+}
+
+nav li {
+  display: inline;
+  padding-left: 3em;
+  border: none;
+}
+nav li :hover {
+  color: rgb(236, 0, 130);
+}
+nav li a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
+.heading_logo {
+  padding-top: 0.7em;
+  padding-left: 1em;
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+}
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    position: absolute;
+    left: 5%;
+  }
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    padding-bottom: 2em;
+
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    right: 10%;
+  }
+  .nav-ul.show {
+    display: flex;
+    text-align: end;
+    padding-bottom: 2em;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* END OF NAVBAR */
+
+/* HOME PAGE */
+.home {
+  position: absolute;
+  top: 21%;
+  display: flex;
+  justify-content: space-between;
+}
+.girl_home {
+  width: 31%;
+  display: block;
+
+  padding-right: 0.5em;
+  padding-left: 6em;
+}
+
+.info {
+  padding-top: 3em;
+  padding-right: 2em;
+}
+
+.info h1 {
+  font-size: 3.5em;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  padding-bottom: 0.1em;
+  cursor: pointer;
+}
+
+.info p {
+  font-size: 1.4em;
+  font-weight: lighter;
+  padding-bottom: 1.8em;
+}
+
+.home_button {
+  background-color: rgba(23, 98, 167, 1);
+  padding: 0.7em;
+  width: 25%;
+  border-radius: 0.4em;
+  text-decoration: none;
+}
+
+.info .home_button:hover {
+  background-color: rgba(23, 98, 167, 0.7);
+}
+
+.circle1 {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+  .girl_home {
+    display: none;
+  }
+  .info {
+    margin: 2em;
+  }
+
+  .info h1 {
+    font-size: 4em;
+    font-weight: 400;
+  }
+
+  .info p {
+    letter-spacing: 0.01em;
+    font-size: 1.5em;
+  }
+}
+
+/* END OF HOME PAGE */
+
+/* .discover {
+  height: 100vh;
+} */
+
+/* FOOTER */
+
+footer {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  position: absolute;
+  bottom: 0;
+  background: rgb(32, 32, 39);
+  width: 100vw;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #fff;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95em;
+}
+
+.footercontent li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 3em;
+  padding-left: 0em;
+}
+
+.footercontent li a {
+  text-decoration: none;
+}
+
+.footercontent li a:hover {
+  text-decoration: underline;
+}
+/* END FOOTER */
+
+/* DISCOVERY PAGE */
+.disc_content {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 3em;
+  margin-left: 3em;
+}
+
+.disc-flex1 h1 {
+  font-size: 2.6em;
+  padding-bottom: 0.5em;
+  cursor: pointer;
+}
+.flex1-grid {
+  width: 70%;
+  padding-bottom: 0.9em;
+  cursor: pointer;
+}
+
+.disc-flex1 p {
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+.flex-2 {
+  width: 70%;
+  position: relative;
+  bottom: 10%;
+  left: 10%;
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .disc_content {
+    margin: 0;
+    padding-top: 7em;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+  }
+  .disc-flex1 h1 {
+    font-size: 2.5em;
+  }
+
+  .disc-flex1 p {
+    font-size: 1.5em;
+  }
+
+  .flex-2 {
+    display: none;
+  }
+}
+
+/* JOIN */
+.join {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4em;
+}
+.join-1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.fun {
+  font-weight: 800;
+  font-size: 1.5em;
+  color: deeppink;
+}
+
+.form label {
+  font-size: 1em;
+}
+
+.form .wrap {
+  padding-bottom: 2em;
+}
+
+.form input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid deeppink;
+}
+
+.form-but {
+  border: 4px solid;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-but:hover {
+  background-color: gray;
+}
+
+@media only screen and (max-width: 900px) {
+  .join {
+    flex-direction: column;
+    padding-top: 7em;
+    font-size: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    justify-content: center;
+  }
+  .fun {
+    font-size: 1.1em;
+  }
+
+  .form {
+    padding-top: 2em;
+  }
+
+  .form-but {
+    width: 20%;
+  }
+}
